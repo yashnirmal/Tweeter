@@ -1,0 +1,27 @@
+.feed{
+    flex: auto;
+    overflow-y: scroll;
+    min-width: 550px;
+    border-right: 1px solid var(--twitter-background);
+}
+
+/* Hides scrollbar for chrome,safari and opera */
+.feed::-webkit-scrollbar{
+    display: none;
+}
+
+/* Hides scrollbar for IE, Edge and firefox */
+.feed{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.topHeader{
+    display: flex;
+    align-items: center;
+    background-color: var(--twitter-background);
+    padding: 15px;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}

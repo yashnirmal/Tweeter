@@ -1,0 +1,37 @@
+.Widgets{
+    flex: 0.18;
+    padding: 20px;
+}
+
+.searchDiv{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 100px;
+    background-color: var(--twitter-background);
+}
+
+.searchDiv>input{
+    border: none;
+    background-color: var(--twitter-background);
+    font-size: 20px;
+    outline: none;
+    margin-left: 10px;
+}
+
+.News{
+    background-color: var(--twitter-background);
+    border-radius: 20px;
+    padding: 20px;
+    height: 700px;
+}
+
+@media(max-width : 1050px){
+    .Widgets{
+        display: none;
+        flex: none;
+        width: fit-content;
+        min-width: 50px;
+    }
+}

@@ -1,0 +1,34 @@
+.SideBarItem{
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.SideBarItem:hover{
+    background-color: var(--twitter-background);
+    color: var(--twitter-color);
+    border-radius: 100px;
+    transition:color 100ms ease-out;
+}
+
+.SideBarItem--active{
+    color: var(--twitter-color);
+}
+
+.SideBarItem> .MuiSvgIcon-root{
+    padding: 18px;
+}
+
+.SideBarItem>h2{
+    font-weight: 800;
+    font-size:23px;
+    margin-right: 20px;
+}
+
+@media(max-width : 1250px){
+    .SideBarItem>h2{
+    display : none;
+    }
+}

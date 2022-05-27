@@ -1,0 +1,38 @@
+.SideBar{
+    flex: 0.18;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-right: 1px solid var(--twitter-background);
+    min-width: 250px;
+    margin-top: 20px;
+}
+button{
+    color: white;
+    border: none;
+    border-radius: 100px;
+    font-size:20px;
+    padding: 15px;
+    font-weight: 800;
+    background-color: var(--twitter-color);
+    text-transform: inherit !important;
+    width:100%;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.SideBarTwitterIcon{
+    color: var(--twitter-color);
+    font-size: 40px !important;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+@media(max-width : 1250px){
+    .SideBar{
+        flex: none;
+        min-width: fit-content;
+    }
+    button{
+        width : fit-content;
+    }
+}
